@@ -1,0 +1,14 @@
+---
+ca: ca.crt
+server: https://192.168.8.63:6443
+dest: where-to-store-objects
+token: x
+resources:
+- v1/configmaps
+
+- apps/v1/daemonsets
+- apps/v1/deployments
+- apps/v1/statefulsets
+
+- extensions/v1beta1/ingresses
+- networking.k8s.io/v1/networkpolicies
